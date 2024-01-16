@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChemTor</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="probootstrap-search" id="probootstrap-search">
+      <a href="#" class="probootstrap-close js-probootstrap-close"><i class="icon-cross"></i></a>
+      <form  >
+        <input type="search" name="s" id="search" placeholder="Search a keyword and hit enter...">
+      </form>
+    </div>
+
+    <div class="probootstrap-page-wrapper">
+      <!-- Fixed navbar -->
+
+      <div class="probootstrap-header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 probootstrap-top-quick-contact-info">
+              <span><i class="icon-location2"></i>Mirpur road, Mohammadpur,Dhaka-1207</span>
+              <span><i class="icon-phone2"></i>01788-873338</span>
+              <span><i class="icon-phone2"></i>01689-553501</span>
+              <span><i class="icon-mail"></i>hello@chemtor.net</span>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 probootstrap-top-social">
+              <ul>
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook2"></i></a></li>
+                <li><a href="#"><i class="icon-instagram2"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+                <li><a href="#" class="probootstrap-search-icon js-probootstrap-search"><i class="icon-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-default probootstrap-navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="btn-more js-btn-more visible-xs">
+              <a href="#"><i class="icon-dots-three-vertical "></i></a>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php">ChemTor</a>
+          </div>
+
+          <div id="navbar-collapse" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="tution_fee.php">Courses</a></li>
+              <li><a href="admission_regular.html">Admission</a></li>
+              <li><a href="select_batch.php">Result</a></li>
+              <li><a href="teachers.html">Teachers</a></li>
+              <li><a href="gallery.php">Gallery</a></li>
+              <li><a href="notice_board.php">Notice</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+<div class="container" >
+<div class="row" >
+
+
+  <div class="col-lg-12 col-md-12 " style="padding:10px;border:1px solid #9C9C9C;margin-bottom:5px;border-radius:10px;">
+          <form method="post" action="registration_regular.php" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <div class="form-group">
+                  <label for="name">Full Name of Student:</label>
+                  <input required type="text" class="form-control" name="s_name" id="name">
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-2">
+                <div class="form-group">
+                  <label for="nick_name">Nick Name:</label>
+                  <input  type="text" class="form-control" name="nick_name" id="name">
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <!-- image-preview-filename input [CUT FROM HERE]-->
+                <script type="text/javascript">
+                $(document).on('click', '#close-preview', function(){
+  $('.image-preview').popover('hide');
+  // Hover befor close the preview
+  $('.image-preview').hover(
+      function () {
+         $('.image-preview').popover('show');
+      },
+       function () {
+         $('.image-preview').popover('hide');
+      }
+  );
+});
+
+$(function() {
+  // Create the close button
+  var closebtn = $('<button/>', {
+      type:"button",
+      text: 'x',
+      id: 'close-preview',
+      style: 'font-size: initial;',
+  });
+  closebtn.attr("class","close pull-right");
+  // Set the popover default content
+  $('.image-preview').popover({
+      trigger:'manual',
+      html:true,
+      title: "<strong>Preview</strong>"+$(closebtn)[0].outerHTML,
+      content: "There's no image",
+      placement:'bottom'
+  });
+  // Clear event
+  $('.image-preview-clear').click(function(){
+      $('.image-preview').attr("data-content","").popover('hide');
+      $('.image-preview-filename').val("");
+      $('.image-preview-clear').hide();
+      $('.image-preview-input input:file').val("");
+      $(".image-preview-input-title").text("Browse");
+  });
+  // Create the preview image
+  $(".image-preview-input input:file").change(function (){
+      var img = $('<img/>', {
+          id: 'dynamic',
+          width:250,
+          height:200
+      });
+      var file = this.files[0];
+      var reader = new FileReader();
+      // Set preview image into the popover data-content
+      reader.onload = function (e) {
+          $(".image-preview-input-title").text("Change");
+          $(".image-preview-clear").show();
+          $(".image-preview-filename").val(file.name);
+          img.attr('src', e.target.result);
+          $(".image-preview").attr("data-content",$(img)[0].outerHTML).popover("show");
+      }
+      reader.readAsDataURL(file);
+  });
+});
+                </script>
+                <style media="screen">
+                .container{
+                        margin-top:20px;
+                      }
+                      .image-preview-input {
+                        position: relative;
+                      overflow: hidden;
+                      margin: 0px;
+                        color: #333;
+                        background-color: #fff;
+                        border-color: #ccc;
+                      }
+                      .image-preview-input input[type=file] {
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      margin: 0;
+                      padding: 0;
+                      font-size: 20px;
+                      cursor: pointer;
+                      opacity: 0;
+                      filter: alpha(opacity=0);
+                      }
+                      .image-preview-input-title {
+                        margin-left:2px;
+                      }
+                </style>
+                   <label for="email">Add photo:(<span style="font-weight:bold;color:red">UP TO 2MB</span>)</label>
+           <div class="input-group image-preview">
+
+               <input type="text"   class="form-control image-preview-filename" > <!-- don't give a name === doesn't send on POST/GET -->
+               <span class="input-group-btn">
+                   <!-- image-preview-clear button -->
+                   <button type="button" class="btn btn-default image-preview-clear" style="display:none;">
+                       <span class="glyphicon glyphicon-remove"></span> Clear
+                   </button>
+                   <!-- image-preview-input -->
+                   <div class="btn btn-default image-preview-input">
+                       <span class="glyphicon glyphicon-folder-open"></span>
+                       <span class="image-preview-input-title">Browse</span>
+                       <input type="file" accept="image/png, image/jpeg, image/gif" name="file" id="image"/> <!-- rename it -->
+                   </div>
+               </span>
+           </div><!-- /input-group image-preview [TO HERE]-->
+              </div>
+            </div>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="pwd">Name of School/college:</label>
+              <input required type="text" name="college" class="form-control" id="pwd">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <label for="pwd">Mobile no:</label>
+              <input required type="text" name="phone_no" placeholder="01xxx-xxxxxx" class="form-control" id="pwd">
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <div class="form-group">
+              <label for="pwd">Class:</label>
+              <select name="cl" class="form-control" required >
+                <option value="">Select one</option>
+
+                <option value="IX(9)">IX(9)</option>
+                <option value="X(10)">X(10)</option>
+                <option value="XI(11)">XI(11)</option>
+                <option value="XII(12)">XII(12)</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+<hr>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="pwd">Father Mobile no:</label>
+              <input required type="text" name="father_mobile" placeholder="01xxx-xxxxxx" class="form-control" id="pwd">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="pwd">Mother Mobile no:</label>
+              <input  type="text" name="mother_mobile" class="form-control" placeholder="01xxx-xxxxxx" id="pwd">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="pwd">Father name:</label>
+              <input  type="text" name="father_name"  class="form-control"  id="pwd">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="pwd"></label>
+              <input  type="text"name="f_profession"  class="form-control"  id="pwd">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="pwd">Mother name:</label>
+              <input  type="text" name="mother_name" class="form-control"  id="pwd">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="pwd"></label>
+              <input  type="text" name="m_profession" class="form-control"  id="pwd">
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <hr>
+          <p for="pwd" style="text-align:center;margin-bottom:0px;color:#333;font-weight:bold">Requested course</p>
+        <div class="row">
+          <div class="col-md-4 col-lg-4">
+            <div class="form-group" >
+              <label for="pwd">course Type:</label>
+              <select name="type" required class="form-control" id="ddlViewBy" onchange="order(this)">
+                <option value="">select one</option>
+                <option value="Regular">Regular</option>
+                <option value="Model Test">Model Test</option>
+                <option value="Revision">Revision</option>
+              </select>
+            </div>
+          </div>
+          <div
+          <div class="col-md-4 col-lg-4">
+            <div class="form-group" id="man_cont1" style="display:none">
+              <label for="pwd">Course:</label>
+              <select name="requested_course" class="form-control"  >
+                <option value="">Select one</option>
+                <option value="Academic(IX)">Academic(IX)</option>
+                <option value="Academic(X)">Academic(X)</option>
+                <option value="Academic(XI)">Academic(XI)</option>
+                <option value="Academic(XII)">Academic(XII)</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+            <div class="form-group" id="man_cont"  style="display:none">
+              <label for="pwd">Model Test:</label>
+              <select name="model_test" class="form-control" >
+                <option value="">Select one:</option>
+
+                <option value="SSC">SSC</option>
+                <option value="HSC">HSC</option>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-lg-2">
+            <div class="form-group">
+              <label for="pwd">Version:</label>
+              <select name="shift" class="form-control" >
+
+                <option value="Bangla">Bangla</option>
+                <option value="English">English</option>
+
+              </select>
+            </div>
+          </div>
+      </div>
+      <script>
+      ///for hide and show element
+              function order(el) {
+                var x = el.value;
+
+                if (x == "Revision" || x=="Regular") {
+                document.getElementById('man_cont').style.display = 'none';
+                  document.getElementById('man_cont1').style.display = 'block';
+
+                } else {
+
+                  document.getElementById('man_cont').style.display = 'block';
+                  document.getElementById('man_cont1').style.display = 'none';
+                }
+              }
+    </script>
+<hr>
+
+  <p for="pwd" style="text-align:center;margin-bottom:0px;color:#333;font-weight:bold">Payment</p><p  type="button" class="btn btn-danger" > <a style="color:white" href="tution_fee.php">Check tution fee</a></p>
+
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <div class="form-group">
+        <label for="pwd">Method:</label>
+        <select name="mayment_method" class="form-control" name="">
+          <option value="">select one</option>
+          <option value="Hand Cash">Hand Cash</option>
+          <option value="Bkash">Bkash</option>
+          <option value="DBBL">DBBL</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="form-group">
+        <label for="pwd">Txt ID:</label>
+        <input type="text" name="pay_id" class="form-control" id="pwd">
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4">
+      <div class="form-group">
+        <label for="pwd">Amount(TK):</label>
+        <input type="number" name="amount" class="form-control" id="pwd">
+      </div>
+    </div>
+  </div>
+
+        <button style="" type="submit" name="submit"  class="btn btn-info">Submit</button>
+
+      </form>
+
+  </div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+      <footer class="probootstrap-footer probootstrap-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>About The ChemTor</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias</p>
+                <h3>Social</h3>
+                <ul class="probootstrap-footer-social">
+                  <li><a href="#"><i class="icon-twitter"></i></a></li>
+                  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#"><i class="icon-github"></i></a></li>
+                  <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                  <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                  <li><a href="#"><i class="icon-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-md-push-1">
+              <div class="probootstrap-footer-widget">
+                <h3>Links</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Courses</a></li>
+                  <li><a href="#">Teachers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="probootstrap-footer-widget">
+                <h3>Contact Info</h3>
+                <ul class="probootstrap-contact-info">
+                  <li><i class="icon-location2"></i> <span>Mirpur road, Mohammadpur,Dhaka-1207</span></li>
+                  <li><i class="icon-mail"></i><span>hello@chemtor.net</span></li>
+                  <li><i class="icon-phone2"></i><span>01788-873338</span></li>
+                  <li><i class="icon-phone2"></i><span>01689-553501</span></li>
+                  </ul>
+              </div>
+            </div>
+
+          </div>
+          <!-- END row -->
+
+        </div>
+
+        <div class="probootstrap-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 text-left">
+                <p>&copy; 2018 <a TARGET="_blank" href="https://softcareit.com/">SoftCare IT</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a target="_blank" href="https://softcareit.com/">softcareit.com</a></p>
+              </div>
+              <div class="col-md-4 probootstrap-back-to-top">
+                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- END wrapper -->
+
+
+    <script src="js/scripts.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/custom.js"></script>
+
+  </body>
+</html>

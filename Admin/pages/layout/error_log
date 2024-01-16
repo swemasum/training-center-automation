@@ -1,0 +1,9 @@
+[01-Nov-2018 14:05:10 America/New_York] PHP Notice:  Undefined variable: image in /home/chemadmin/public_html/Admin/pages/layout/addbyteacher.php on line 64
+[03-Nov-2018 12:39:55 America/New_York] PHP Notice:  Undefined variable: last_date in /home/chemadmin/public_html/Admin/pages/layout/renew.php on line 290
+[03-Nov-2018 12:42:59 America/New_York] PHP Notice:  Undefined variable: batch_no in /home/chemadmin/public_html/Admin/pages/layout/show_result_select_batch.php on line 380
+[08-Nov-2018 06:14:12 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/chemadmin/public_html/Admin/pages/layout/accept.php on line 12
+[08-Nov-2018 06:15:13 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/chemadmin/public_html/Admin/pages/layout/accept.php on line 12
+[08-Nov-2018 06:20:44 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/chemadmin/public_html/Admin/pages/layout/accept.php on line 12
+[08-Nov-2018 08:13:44 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/chemadmin/public_html/Admin/pages/layout/change_batch.php on line 13
+[08-Nov-2018 08:14:01 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/chemadmin/public_html/Admin/pages/layout/change_batch.php on line 13
+[08-Nov-2018 08:32:44 America/New_York] PHP Notice:  A session had already been started - ignoring session_start() in /home/chemadmin/public_html/Admin/pages/layout/change_batch.php on line 13
