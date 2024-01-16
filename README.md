@@ -1,3 +1,7 @@
+Live demo: https://demo-training-center-automation.mdmasum.org/
+
+admin panel: https://demo-training-center-automation.mdmasum.org/Admin/
+
 That product was made for a training center in Bangladesh.
 
 Major functions are given below:
